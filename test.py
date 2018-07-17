@@ -1,3 +1,3 @@
 import socket
 
-print 'hello world'
+print ('hello world')
