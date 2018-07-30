@@ -7,17 +7,16 @@ from PyQt5.QtWidgets import QWidget, QMessageBox, QFileDialog
 
 from calc_ui import *
 
-class MainWindow(QWidget, Ui_Calc):
+class Calculater(QWidget, Ui_Calc):
     def __init__(self):
-        super(MainWindow, self).__init__()
+        super(Calculater, self).__init__()
         self.setupUi(self)
 
-    def click_one(self):
-        # QtWidgets.QMessageBox.information(self.pushButton,"标题","这是第一个PyQt5 GUI程序")
-        pass
+    def on_click(self):
+        print('click')
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
-    windows = MainWindow()
+    windows = Calculater()
     windows.show()
     sys.exit(app.exec_())
