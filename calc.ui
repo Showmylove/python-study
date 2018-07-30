@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Frame</class>
- <widget class="QFrame" name="Frame">
+ <class>Calc</class>
+ <widget class="QFrame" name="Calc">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Frame</string>
+   <string>Calc</string>
   </property>
   <widget class="QPushButton" name="pushButton_six">
    <property name="geometry">
@@ -249,5 +249,25 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_zero</sender>
+   <signal>clicked()</signal>
+   <receiver>Calc</receiver>
+   <slot>click_one()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>257</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>12</x>
+     <y>257</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>click_one()</slot>
+ </slots>
 </ui>

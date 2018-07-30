@@ -12,6 +12,8 @@ import time
 import unittest
 
 from PyQt5 import QtWidgets, QtGui
+from PyQt5.QtWidgets import QWidget, QMessageBox, QFileDialog
+
 from enum import Enum
 
 print ('hello world')
@@ -903,13 +905,3 @@ print ('hello world')
 # windows = QtWidgets.QWidget()
 # windows.show()
 # sys.exit(app.exec_())
-
-from calc import *
-
-if __name__ == '__main__':
-    app = QtWidgets.QApplication(sys.argv)
-    windows = QtWidgets.QMainWindow()
-    ui = Ui_Frame()
-    ui.setupUi(windows)
-    windows.show()
-    sys.exit(app.exec_())
