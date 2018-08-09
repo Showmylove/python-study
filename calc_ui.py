@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'calc.ui'
+# Form implementation generated from reading ui file 'calc_ui.ui'
 #
 # Created by: PyQt5 UI code generator 5.11.2
 #
@@ -41,6 +41,7 @@ class Ui_Calculater(object):
         self.lcdNumber.setGeometry(QtCore.QRect(20, 30, 484, 60))
         self.lcdNumber.setLocale(QtCore.QLocale(QtCore.QLocale.English, QtCore.QLocale.UnitedStates))
         self.lcdNumber.setSmallDecimalPoint(False)
+        self.lcdNumber.setDigitCount(18)
         self.lcdNumber.setObjectName("lcdNumber")
         self.pushButton_add = QtWidgets.QPushButton(Calculater)
         self.pushButton_add.setGeometry(QtCore.QRect(320, 280, 84, 28))
@@ -78,9 +79,6 @@ class Ui_Calculater(object):
         self.pushButton_double_zero = QtWidgets.QPushButton(Calculater)
         self.pushButton_double_zero.setGeometry(QtCore.QRect(120, 280, 84, 28))
         self.pushButton_double_zero.setObjectName("pushButton_double_zero")
-        self.textBrowser = QtWidgets.QTextBrowser(Calculater)
-        self.textBrowser.setGeometry(QtCore.QRect(20, 100, 484, 50))
-        self.textBrowser.setObjectName("textBrowser")
 
         self.retranslateUi(Calculater)
         self.pushButton_seven.clicked.connect(Calculater.on_click)
@@ -119,13 +117,13 @@ class Ui_Calculater(object):
         self.pushButton_add.setText(_translate("Calculater", "+"))
         self.pushButton_two.setText(_translate("Calculater", "2"))
         self.pushButton_four.setText(_translate("Calculater", "4"))
-        self.pushButton_mul.setText(_translate("Calculater", "×"))
+        self.pushButton_mul.setText(_translate("Calculater", "*"))
         self.pushButton_div.setText(_translate("Calculater", "/"))
         self.pushButton_dot.setText(_translate("Calculater", "."))
         self.pushButton_five.setText(_translate("Calculater", "5"))
         self.pushButton_backspace.setText(_translate("Calculater", "Backspace"))
         self.pushButton_clear.setText(_translate("Calculater", "Clear"))
-        self.pushButton_clear_all.setText(_translate("Calculater", "Clear all"))
+        self.pushButton_clear_all.setText(_translate("Calculater", "Clear All"))
         self.pushButton_equal.setText(_translate("Calculater", "="))
         self.pushButton_double_zero.setText(_translate("Calculater", "00"))
 
